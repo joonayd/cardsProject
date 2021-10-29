@@ -6,6 +6,11 @@ import BlankCardHorizontal from "./components/BlankCardHorizontal";
 import BlankCardVertical from "./components/BlankCardVertical";
 import EditBacksideHorizontal from "./components/EditBacksideHorizontal";
 import EditBacksideVertical from "./components/EditBacksideVertical";
+import ReviewDesignHorizontal from "./components/ReviewDesignHorizontal";
+import ReviewDesignVertical from "./components/ReviewDesignVertical";
+import SaveProjectHorizontal from "./components/SaveProjectHorizontal";
+import SaveProjectVertical from "./components/SaveProjectVertical";
+
 import SizeSelect from "./components/SizeSelect";
 import TopMenu from "./components/TopMenu";
 import UploadPhotoHorizontal from "./components/UploadPhotoHorizontal";
@@ -28,6 +33,10 @@ function App() {
           <Route path="/upload-video-horizontal" component={UploadVideoHorizontal} />
           <Route path="/edit-backside-vertical" component={EditBacksideVertical} />
           <Route path="/edit-backside-horizontal" component={EditBacksideHorizontal} />
+          <Route path="/review-design-vertical" component={ReviewDesignVertical} />
+          <Route path="/review-design-horizontal" component={ReviewDesignHorizontal} />
+          <Route path="/save-project-vertical" component={SaveProjectVertical} />
+          <Route path="/save-project-horizontal" component={SaveProjectHorizontal} />
           {/* <Redirect to="/not-found" /> */}
         </Switch>
       </div>

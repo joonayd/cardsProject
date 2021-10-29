@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const EditBacksideHorizontal = () => {
   return (
@@ -22,17 +23,31 @@ const EditBacksideHorizontal = () => {
               </div>
             </div>
             <div className="card-column">
-              <div className="check-box"></div>
-              <div className="check-box"></div>
+              <div className="check-box">
+                <input type="radio" id="blank" name="blank" value="blank" />
+                <img src="../../svgIcons/blank.svg" alt="" />
+              </div>
+              <div className="check-box">
+                <input type="radio" id="blank" name="blank" value="blank" />
+                <img src="../../svgIcons/blank.svg" alt="" />
+              </div>
             </div>
             <div className="card-column">
-              <div className="check-box"></div>
-              <div className="check-box"></div>
+              <div className="check-box">
+                <input type="radio" id="blank" name="blank" value="blank" />
+                <img src="../../svgIcons/blank.svg" alt="" />
+              </div>
+              <div className="check-box">
+                <input type="radio" id="blank" name="blank" value="blank" />
+                <img src="../../svgIcons/blank.svg" alt="" />
+              </div>
             </div>
           </section>
-          <button style={{ width: "90%", marginBottom: "1rem" }} className="btn-customize">
-            Save and Continue
-          </button>
+          <Link to="review-design-horizontal" style={{ width: "100%" }}>
+            <button style={{ width: "90%", marginBottom: "1rem" }} className="btn-customize">
+              Save and Continue
+            </button>
+          </Link>
         </div>
       </section>
     </div>
