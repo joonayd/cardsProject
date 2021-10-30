@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 
 import "./App.css";
+import Login from "./components/auth/Login";
+import Register from "./components/auth/Register";
 import BlankCardHorizontal from "./components/BlankCardHorizontal";
 import BlankCardVertical from "./components/BlankCardVertical";
 import EditBacksideHorizontal from "./components/EditBacksideHorizontal";
@@ -37,6 +39,8 @@ function App() {
           <Route path="/review-design-horizontal" component={ReviewDesignHorizontal} />
           <Route path="/save-project-vertical" component={SaveProjectVertical} />
           <Route path="/save-project-horizontal" component={SaveProjectHorizontal} />
+          <Route path="/signup" component={Register} />
+          <Route path="/login" component={Login} />
           {/* <Redirect to="/not-found" /> */}
         </Switch>
       </div>

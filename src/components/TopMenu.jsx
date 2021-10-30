@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const TopMenu = () => {
   return (
@@ -7,10 +8,14 @@ const TopMenu = () => {
         <nav className="navbar">
           <ul className="nav-area">
             <li>
-              <button className="btn-login">login</button>
+              <Link to="/login">
+                <button className="btn-login">login</button>
+              </Link>
             </li>
             <li>
-              <button className="btn-signup">signup</button>
+              <Link to="/signup">
+                <button className="btn-signup">signup</button>
+              </Link>
             </li>
           </ul>
         </nav>

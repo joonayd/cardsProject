@@ -118,7 +118,7 @@ p {
   font-weight: 600;
   width: 10rem;
 
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
 }
 .btn-customize:hover {
   background-color: #2e9997;
@@ -335,4 +335,96 @@ p {
   color: black;
   font-weight: 500;
   outline: none;
+}
+.container-auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth-section {
+  margin-top: 2rem;
+  background: white;
+  height: 95vh;
+  width: 60vh;
+  box-shadow: 0.5px 0.5px 0.5px 0 grey;
+  border-radius: 1rem;
+}
+.auth-section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  width: 20rem;
+  height: 4rem;
+  background: white;
+}
+.auth-section h3 {
+  text-align: center;
+  background: transparent;
+  margin-top: 2rem;
+}
+.auth-section p {
+  text-align: center;
+  background: transparent;
+  font-size: 1.25rem;
+}
+
+.auth-inputs {
+  display: flex;
+  flex-direction: column;
+
+  background: transparent;
+}
+.auth-inputs input {
+  width: 25rem;
+  height: 3.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.75rem;
+  border-radius: 4px;
+  border: none;
+  color: #8c5740;
+  font-weight: 500;
+  font-size: 1.25rem;
+  background-color: #eddfc0;
+}
+.social-buttons {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+}
+.social-buttons button {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 11rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+}
+.social-facebook {
+  background: #4267b2;
+  color: white;
+}
+.social-facebook:hover {
+  background: #2f549e;
+}
+.social-google {
+  background: #00265d;
+  color: white;
+}
+.social-google:hover {
+  background: #001635;
+  color: white;
+}
+.social-icons {
+  background: transparent;
+}
+.auth-inputs a {
+  color: #00b7b5;
+  background: transparent;
+}
+.auth-inputs a:hover {
+  color: #009291;
 }
