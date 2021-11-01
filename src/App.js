@@ -19,6 +19,9 @@ import UploadPhotoHorizontal from "./components/UploadPhotoHorizontal";
 import UploadPhotoVertical from "./components/UploadPhotoVertical";
 import UploadVideoHorizontal from "./components/UploadVideoHorizontal";
 import UploadVideoVertical from "./components/UploadVideoVertical";
+import MailingVertical from "./components/MailingVertical";
+import MailingHorizontal from "./components/MailingHorizontal";
+import LandingPage from "./components/LandingPage";
 
 function App() {
   return (
@@ -39,8 +42,11 @@ function App() {
           <Route path="/review-design-horizontal" component={ReviewDesignHorizontal} />
           <Route path="/save-project-vertical" component={SaveProjectVertical} />
           <Route path="/save-project-horizontal" component={SaveProjectHorizontal} />
+          <Route path="/mail-vertical" component={MailingVertical} />
+          <Route path="/mail-horizontal" component={MailingHorizontal} />
           <Route path="/signup" component={Register} />
           <Route path="/login" component={Login} />
+          <Route path="/" exact component={LandingPage} />
           {/* <Redirect to="/not-found" /> */}
         </Switch>
       </div>

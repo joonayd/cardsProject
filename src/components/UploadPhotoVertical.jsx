@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const UploadPhotoVertical = () => {
+  const [image, setImage] = React.useState(null);
   return (
     <div>
       <h3 className="upload-card-heading">Upload Your Own Card</h3>
@@ -9,7 +10,12 @@ const UploadPhotoVertical = () => {
         <div className="blank-card">
           <h3>UPLOAD PHOTO</h3>
           <p>Recommended size is 5.25" x 7.25"</p>
-          <a href="">Upload now</a>
+          <input
+            accept="image/*"
+            type="file"
+            value={image}
+            onChange={(e) => setImage(e.target.files[0])}
+          />
         </div>
         <div className="upload-photo-card">
           <div className="upload-photo-card-heading">

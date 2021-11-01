@@ -5,6 +5,7 @@ const TopMenu = () => {
   return (
     <div>
       <header>
+        <img className="navbar-logo" src="../imgs/logo.jfif" alt="" />
         <nav className="navbar">
           <ul className="nav-area">
             <li>

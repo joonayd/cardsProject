@@ -1,3 +1,159 @@
+/* LANDING PAGE */
+.App {
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center !important;
+  width: 100%;
+  padding: 0.625rem 0;
+}
+
+.logo-img {
+  width: 17.5rem;
+}
+
+.mail {
+  background-color: #efdfbb;
+  display: flex;
+  justify-content: center !important;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mail-img {
+  width: 50rem;
+}
+.vedio {
+  background-color: #954535;
+  display: flex;
+  justify-content: center !important;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  /* margin-top: -10rem; */
+}
+
+.vedio-text {
+  margin-top: -10rem;
+}
+
+.vedio-img {
+  width: 17.5rem;
+}
+.vedio-text {
+  font-size: 0.75rem;
+  color: black;
+}
+
+.vedio-text2 {
+  font-size: 2.375rem;
+  font-weight: bold;
+  color: white;
+}
+.mobile {
+  background-color: #a9ba9d;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+}
+
+.mobile-footer {
+  background-color: #a9ba9d;
+  display: flex;
+  text-align: center;
+
+  justify-content: space-around;
+}
+
+.mobile-value {
+  width: 6.25rem;
+}
+
+.bg-mybrown {
+  background-color: brown;
+}
+
+.bg-mygreen {
+  background-color: green;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+.mail-font {
+  font-weight: bold;
+  font-size: 5.813rem;
+}
+
+.mail-here {
+  font-size: 1.438rem;
+}
+
+.mail-button {
+  font-size: 0.875rem;
+}
+
+.mobile-center {
+  width: 28.125rem;
+}
+
+.end {
+  background-color: #8c5740;
+  display: flex;
+  justify-content: center !important;
+  flex-direction: column;
+  align-items: center;
+  padding: 12.5rem 0;
+}
+.end-button {
+  /* color: cadetblue; */
+  background: brown;
+}
+.footer {
+  background-color: black;
+}
+.footer-img {
+  background-color: white;
+  width: 6.25rem;
+}
+
+.mobile1 {
+  font-size: 0.75rem;
+}
+
+.mobile2 {
+  font-size: 2.375rem;
+  font-weight: bold;
+}
+
+.mobile3 {
+  font-size: 1rem;
+}
+
+.mobile-img {
+  width: 31.25rem;
+}
+
+.mobile-img2 {
+  width: 43.75rem;
+}
+
+.mobile-footer-img {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.mobile-div {
+  padding: 1.875rem 0;
+}
+
+.email {
+  font-size: 0.75rem;
+}
+
 * {
   background-color: #eddfc0;
 }
@@ -9,7 +165,7 @@ a {
 }
 header {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
   padding: 30px 70px;
   background-color: #8c5740;
@@ -176,6 +332,7 @@ p {
 .blank-card-horizontal a:hover {
   color: #00265d;
 }
+
 .blank-card-horizontal {
   height: 30rem;
   width: 42rem;
@@ -427,4 +584,50 @@ p {
 }
 .auth-inputs a:hover {
   color: #009291;
+}
+
+.check-box-mail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 4rem;
+  width: 22rem;
+  background: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: white;
+
+  font-size: 1.5rem;
+  background: #c4f8ff;
+  box-shadow: 3px 3px 3px 0 grey;
+}
+.check-box-mail:hover {
+  background: #ffd480;
+  color: black;
+  font-weight: 500;
+  outline: none;
+}
+
+.check-box-mail p {
+  width: 80%;
+  background: transparent;
+  font-weight: 500;
+}
+.card-column-mail {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.check-box-mail input[type="radio"] {
+  width: 1.5rem;
+  height: 1.5rem;
+  box-shadow: none;
+}
+.navbar-logo {
+  height: 3rem;
+  width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
 }

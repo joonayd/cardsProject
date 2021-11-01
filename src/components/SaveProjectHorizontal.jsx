@@ -14,7 +14,7 @@ const SaveProjectHorizontal = () => {
           <img src="../../svgIcons/thumbsup.svg" alt="" />
           <p>Beautiful! Now just name this project so you can find it later.</p>
           <input type="text" placeholder="Name this project" />
-          <Link to="" style={{ width: "90%" }}>
+          <Link to="/mail-horizontal" style={{ width: "90%" }}>
             <button style={{ width: "90%", marginBottom: "1rem" }} className="btn-customize">
               Save and continue
             </button>
