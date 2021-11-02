@@ -22,6 +22,8 @@ import UploadVideoVertical from "./components/UploadVideoVertical";
 import MailingVertical from "./components/MailingVertical";
 import MailingHorizontal from "./components/MailingHorizontal";
 import LandingPage from "./components/LandingPage";
+import WriteTextHorizontal from "./components/WriteTextHorizontal";
+import WriteTextVertical from "./components/WriteTextVertical";
 
 function App() {
   return (
@@ -47,7 +49,9 @@ function App() {
           <Route path="/signup" component={Register} />
           <Route path="/login" component={Login} />
           <Route path="/" exact component={LandingPage} />
-          {/* <Redirect to="/not-found" /> */}
+          <Route path="/write-text-horizontal" component={WriteTextHorizontal} />
+          <Route path="/write-text-vertical" component={WriteTextVertical} />
+          <Redirect to="/not-found" />
         </Switch>
       </div>
     </Router>

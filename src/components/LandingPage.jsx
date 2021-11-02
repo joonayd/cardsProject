@@ -9,6 +9,7 @@ import ship from "./assets/ship.png";
 import vedio from "./assets/vedio.PNG";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Player } from "video-react";
+import "../LandingPage.css";
 
 import { Button, Navbar, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -16,14 +17,6 @@ import { Link } from "react-router-dom";
 function LandingPage() {
   return (
     <div className="App">
-      <div>
-        <Navbar bg="light" variant="dark">
-          <Container className="logo">
-            <img className="logo-img " src={logo} alt="Logo" />
-          </Container>
-        </Navbar>
-      </div>
-
       <div className="mail">
         <div>
           <h1 className="mail-font">Mail is Boring</h1>
@@ -61,7 +54,7 @@ function LandingPage() {
           </div>
 
           <div>
-            <Container>
+            <Container className="mobile-container">
               <img className="mobile-img2" src={mobile} alt="Logo" />
             </Container>
           </div>
@@ -69,7 +62,7 @@ function LandingPage() {
 
         <div className="mobile">
           <div>
-            <Container>
+            <Container className="mobile-container">
               <img className="mobile-img" src={mobile2} alt="Logo" />
             </Container>
           </div>
@@ -84,15 +77,14 @@ function LandingPage() {
         </div>
 
         <div className="mobile">
-          <div>
-            <div className="mobile-center">
-              <h2 className="mobile1">THE FUTURE OF ADVERTISMENT</h2>
-              <h1 className="mobile2">Make a lasting impression</h1>
-              <h1 className="mobile3">Unstationery campaigns are more compelling.</h1>
-            </div>
+          <div className="mobile-center">
+            <h2 className="mobile1">THE FUTURE OF ADVERTISMENT</h2>
+            <h1 className="mobile2">Make a lasting impression</h1>
+            <h1 className="mobile3">Unstationery campaigns are more compelling.</h1>
           </div>
+
           <div>
-            <Container>
+            <Container className="mobile-container">
               <img className="mobile-img" src={mobile3} alt="Logo" />
             </Container>
           </div>
@@ -120,7 +112,7 @@ function LandingPage() {
       </div>
 
       <div className="end ">
-        <Container>
+        <Container style={{ background: "transparent" }}>
           <h1 className="mobile2">Get Early Access</h1>
           <h3 className="mobile3">Unstationery news + early access to the site</h3>
           <Button className="end-button" size="lg" active>
@@ -131,7 +123,7 @@ function LandingPage() {
 
       <div className="footer">
         <img className="footer-img " src={logo} alt="Logo" />
-        <h1 className="email">email</h1>
+        <h1 className="email"> email</h1>
       </div>
     </div>
   );
